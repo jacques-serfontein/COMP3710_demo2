@@ -1,5 +1,4 @@
 #!/bin/bash
-time=0-01:00:00
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH --job-name=45339961_test
@@ -7,5 +6,7 @@ time=0-01:00:00
 #SBATCH --partition=vgpu
 #SBATCH --gres=gpu:1
 
-conda activate /home/Student/s4533996/conda-torch
-python test.py
+# source /home/Student/s4533996/miniconda3/bin/activate conda-torch
+conda activate conda-torch
+
+python ~/COMP3710_demo2/Q2P2_rangpur.py
