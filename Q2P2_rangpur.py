@@ -162,8 +162,6 @@ for epoch in range(num_epochs):
 
         # Backwards and optimise
         optimizer.zero_grad()
-        # loss.backward()
-        # optimizer.step()
 
         if (i+1) % 300 == 0:
             print("Epoch [{}/{}], Step [{}/{}], Loss: {:.4f}".format(
